@@ -1,0 +1,25 @@
+
+:host {
+  display: flex;
+  justify-content: space-around;
+}
+
+.catalog-filter {
+  width: 30vmin;
+}
+
+.catalog-list {
+  display: flex;
+  flex-direction: column;
+
+  .products-list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: fit-content;
+
+    app-product-card {
+      margin: 1vmin;
+    }
+  }
+}

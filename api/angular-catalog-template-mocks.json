@@ -1,0 +1,116 @@
+{
+  "uuid": "b63e39c0-37ee-44a4-83b9-f468178c9494",
+  "lastMigration": 29,
+  "name": "Angular catalog template mocks",
+  "endpointPrefix": "",
+  "latency": 0,
+  "port": 3002,
+  "hostname": "",
+  "folders": [],
+  "routes": [
+    {
+      "uuid": "291c8714-bdcb-4246-bef6-9e4dd36ca1c0",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "products/filter/*",
+      "responses": [
+        {
+          "uuid": "e8bce124-5f61-4e09-817f-5be91467329e",
+          "body": "[\n  {\n    \"category\": \"Placa mãe\",\n    \"products\" : [\n      {\n        \"id\": 1,\n        \"name\": \"Placa-Mãe Afox, Intel LGA 1155, mATX, DDR3, VGA e HDMI - H61-MA5\",\n        \"image\": \"https://images.kabum.com.br/produtos/fotos/sync_mirakl/220016/Placa-de-V-deo-Asus-NVIDIA-GeForce-GTX-1650-TUF-4GB-GDDR6-2-FANs_1693952349_p.jpg\"\n      },\n      {\n        \"id\": 2,\n        \"name\": \"Placa-Mãe Gigabyte Z590 UD AC 1.1, Intel LGA 1200\",\n        \"image\": \"https://images.kabum.com.br/produtos/fotos/sync_mirakl/229981/Placa-M-e-Gigabyte-Z590-UD-AC-1-1-Intel-LGA-1200_1674577173_p.jpg\"\n      }\n    ]\n  },\n  {\n    \"category\": \"Placa de vídeo\",\n    \"products\" : [\n      {\n        \"id\": 3,\n        \"name\": \"Placa de vídeo RTX 3060\",\n        \"image\": \"https://images.kabum.com.br/produtos/fotos/sync_mirakl/219913/Placa-M-e-Afox-Intel-LGA-1155-mATX-DDR3-VGA-e-HDMI-H61-MA5_1691593131_p.jpg\"\n      },\n      {\n        \"id\": 4,\n        \"name\": \"Placa de Vídeo Palit NVIDIA GeForce RTX 3070 Gamerock, 8GB GDDR6\",\n        \"image\": \"https://images.kabum.com.br/produtos/fotos/sync_mirakl/240617/Placa-de-V-deo-Palit-NVIDIA-GeForce-RTX-3070-Gamerock-8GB-GDDR6_1674571152_p.jpg\"\n      }\n    ]\n  }\n]",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id"
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "8ef7fe1b-f8c3-4753-80ce-629bb9511012",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "products",
+      "responses": [
+        {
+          "uuid": "97616b84-801f-4ce0-ba40-c5295e2aba0c",
+          "body": "[\n  {\n    \"id\": 1,\n    \"name\": \"Placa-Mãe Afox, Intel LGA 1155, mATX, DDR3, VGA e HDMI - H61-MA5\",\n    \"image\": \"https://images.kabum.com.br/produtos/fotos/sync_mirakl/219913/Placa-M-e-Afox-Intel-LGA-1155-mATX-DDR3-VGA-e-HDMI-H61-MA5_1691593126_g.jpg\",\n    \"value\": 120.00\n    \n  },\n  {\n    \"id\": 2,\n    \"name\": \"Placa-Mãe Gigabyte Z590 UD AC 1.1, Intel LGA 1200\",\n    \"image\": \"https://images.kabum.com.br/produtos/fotos/sync_mirakl/229981/Placa-M-e-Gigabyte-Z590-UD-AC-1-1-Intel-LGA-1200_1674577159_g.jpg\",\n    \"value\": 150.00\n  },\n  {\n    \"id\": 3,\n    \"name\": \"Placa de vídeo RTX 3060\",\n    \"image\": \"https://images.kabum.com.br/produtos/fotos/sync_mirakl/220016/Placa-de-V-deo-Asus-NVIDIA-GeForce-GTX-1650-TUF-4GB-GDDR6-2-FANs_1693952342_g.jpg\",\n    \"value\": 160.00\n  },\n  {\n    \"id\": 4,\n    \"name\": \"Placa de Vídeo Palit NVIDIA GeForce RTX 3070 Gamerock, 8GB GDDR6\",\n    \"image\": \"https://images.kabum.com.br/produtos/fotos/sync_mirakl/220016/Placa-de-V-deo-Asus-NVIDIA-GeForce-GTX-1650-TUF-4GB-GDDR6-2-FANs_1693952342_g.jpg\",\n    \"value\": 1200.00\n  }\n]",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id"
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    }
+  ],
+  "rootChildren": [
+    {
+      "type": "route",
+      "uuid": "291c8714-bdcb-4246-bef6-9e4dd36ca1c0"
+    },
+    {
+      "type": "route",
+      "uuid": "8ef7fe1b-f8c3-4753-80ce-629bb9511012"
+    }
+  ],
+  "proxyMode": false,
+  "proxyHost": "",
+  "proxyRemovePrefix": false,
+  "tlsOptions": {
+    "enabled": false,
+    "type": "CERT",
+    "pfxPath": "",
+    "certPath": "",
+    "keyPath": "",
+    "caPath": "",
+    "passphrase": ""
+  },
+  "cors": true,
+  "headers": [
+    {
+      "key": "Content-Type",
+      "value": "application/json"
+    },
+    {
+      "key": "Access-Control-Allow-Origin",
+      "value": "*"
+    }
+  ],
+  "proxyReqHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "proxyResHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "data": []
+}

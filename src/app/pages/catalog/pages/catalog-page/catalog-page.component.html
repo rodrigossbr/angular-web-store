@@ -1,0 +1,15 @@
+<div class="catalog-filter">
+  FILTRO
+</div>
+
+<div class="catalog-list">
+  <div>
+    LIST HEADER
+  </div>
+  <div class="products-list">
+    <app-product-card
+      *ngFor="let product of products"
+      [product]="product"
+    ></app-product-card>
+  </div>
+</div>

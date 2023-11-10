@@ -1,0 +1,17 @@
+
+<input type="text"
+       placeholder="Buscar produto"
+       matInput
+       [formControl]="productsAutocomplete"
+       required
+       [matAutocomplete]="autoGroup">
+<mat-autocomplete #autoGroup="matAutocomplete" (optionSelected)="openProduct($event)">
+  <mat-optgroup *ngFor="let category of products" [label]="category.category">
+    <mat-option *ngFor="let product of category.products" [value]="product.name">
+      <div class="option-info">
+        <img alt="" class="example-option-img" [src]="product.image" height="25">
+        <span>{{ product.name }}</span>
+      </div>
+    </mat-option>
+  </mat-optgroup>
+</mat-autocomplete>

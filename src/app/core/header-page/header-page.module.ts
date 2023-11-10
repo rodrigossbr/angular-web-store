@@ -1,0 +1,26 @@
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { HeaderPageComponent } from './components/header-page/header-page.component';
+import {MatToolbarModule} from "@angular/material/toolbar";
+import {ProcuctsAutocompleteModule} from "../procucts-autocomplete/procucts-autocomplete.module";
+import {MatButtonModule} from "@angular/material/button";
+import {MatIconModule} from "@angular/material/icon";
+
+
+
+@NgModule({
+  declarations: [
+    HeaderPageComponent,
+  ],
+  exports: [
+    HeaderPageComponent
+  ],
+  imports: [
+    CommonModule,
+    MatToolbarModule,
+    ProcuctsAutocompleteModule,
+    MatButtonModule,
+    MatIconModule
+  ]
+})
+export class HeaderPageModule { }

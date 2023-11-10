@@ -1,0 +1,29 @@
+
+:host {
+  width: 100%;
+  max-width: 50vmin;
+  margin: 1vmin 3vmin;
+
+  input {
+    width: inherit;
+    padding: 2vmin;
+    font-size: 0.875rem;
+    border-radius: 6px;
+    border: 2px;
+  }
+}
+
+.option-info {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+
+  span {
+    text-wrap: nowrap;
+    text-overflow: ellipsis;
+    max-width: 82%;
+    overflow: hidden;
+    font-size: 0.875rem;
+    padding-left: 1vmin;
+  }
+}

@@ -1,0 +1,11 @@
+<mat-card class="product-card">
+  <img mat-card-image [src]="product.image" alt="Photo of a Shiba Inu">
+  <mat-card-content>
+    <b>{{ product.name }}</b>
+
+    <strong>{{ product.value | currency }}</strong>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-flat-button color="warn">Comprar</button>
+  </mat-card-actions>
+</mat-card>
