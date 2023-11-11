@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HeaderPageComponent } from './components/header-page/header-page.component';
 import {MatToolbarModule} from "@angular/material/toolbar";
-import {ProcuctsAutocompleteModule} from "../procucts-autocomplete/procucts-autocomplete.module";
+import {ProductsAutocompleteModule} from "../procucts-autocomplete/products-autocomplete.module";
 import {MatButtonModule} from "@angular/material/button";
 import {MatIconModule} from "@angular/material/icon";
 
@@ -18,7 +18,7 @@ import {MatIconModule} from "@angular/material/icon";
   imports: [
     CommonModule,
     MatToolbarModule,
-    ProcuctsAutocompleteModule,
+    ProductsAutocompleteModule,
     MatButtonModule,
     MatIconModule
   ]

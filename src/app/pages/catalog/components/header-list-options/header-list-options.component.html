@@ -1,0 +1,47 @@
+<div class="header-list-options">
+  <div class="select-options">
+    <mat-icon>swap_vert</mat-icon>
+    <mat-form-field>
+      <mat-label>Ordenar</mat-label>
+      <mat-select
+        [(value)]="options.sortType"
+        (valueChange)="listOptionsChange()"
+      >
+        <mat-option *ngFor="let option of sortTypesOptions" [value]="option">
+          {{ productSortTypeDefs[option] }}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Exibir</mat-label>
+      <mat-select
+        [(value)]="options.displayItemsPage"
+        (valueChange)="listOptionsChange()"
+      >
+        <mat-option *ngFor="let option of displayItemsPageTypesOptions" [value]="option">
+          {{ option }} por página
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+  <span>{{ totalItems }} produtos</span>
+  <mat-button-toggle-group
+    [(value)]="options.viewType"
+    (change)="listOptionsChange()"
+  >
+    <mat-button-toggle
+      value="list"
+      [matTooltip]="viewTypesDefs[ViewTypeEnum.LIST]"
+
+    >
+      <mat-icon>format_list_bulleted</mat-icon>
+    </mat-button-toggle>
+    <mat-button-toggle
+      value="grid"
+      [matTooltip]="viewTypesDefs[ViewTypeEnum.GRID]"
+    >
+      <mat-icon>grid_view</mat-icon>
+    </mat-button-toggle>
+  </mat-button-toggle-group>
+</div>
+<mat-divider></mat-divider>

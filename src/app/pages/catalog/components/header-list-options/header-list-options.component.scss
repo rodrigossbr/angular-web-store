@@ -1,0 +1,22 @@
+
+:host {
+
+  .header-list-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2vmin 0.8vmin;
+
+    .select-options {
+
+      mat-form-field {
+
+        margin: {
+          top: 2vmin;
+          left: 1vmin;
+          right: 2vmin;
+        };
+      }
+    }
+  }
+}
